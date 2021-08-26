@@ -27,18 +27,8 @@
         {% include menu.html %}
       </header>
       <section>
-
-      {{ content }}
       
-      <h1>What I'm working on</h1>
-      {% for post in site.posts %}
-      <li>
-        <small>{{ post.date | date: "%-d %B %Y" }}</small>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        {{ post.excerpt }}
-      </li>
-    {% endfor %}
-  
+      {{ content }}
 
       </section>
       <footer>
