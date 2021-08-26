@@ -13,8 +13,7 @@ Wondering why this site is dark? Well its becuase I am forking the [jekyll theme
 You ask, well the auto one will change the theme based on system theme and the other one does the same but if the browser doesnt support getting the system-theme it will deafualt to dark.
 [Try it out!](https://godalming123.github.io/minimal/)
 [Veiw the pull](https://github.com/pages-themes/minimal/pull/121)
-[See the repo](https://github.com/godalming123/minimal)
-[See more]
+[Star the repo](https://github.com/godalming123/minimal)
 
 ## Updates
 
