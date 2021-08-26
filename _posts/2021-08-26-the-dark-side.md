@@ -27,5 +27,3 @@ You ask, well the auto one will change the theme based on system theme and the o
   <small>
   
   by ~~Eiensteign~~ **Me. ...Just face it your small brain cant handle 1 single quote by ~~Eienstien~~ Me.**
-  
-  </small>
