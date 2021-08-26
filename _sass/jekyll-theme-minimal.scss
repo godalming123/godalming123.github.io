@@ -1,5 +1,6 @@
 @import "fonts";
 @import "rouge-github";
+@import "my-styles";
 
 body {
   background-color: var(--clr-bg);
@@ -261,12 +262,6 @@ footer {
   pre, code {
     word-wrap:normal;
   }
-}
-
-.profile-picture {
-  border-radius: 999px;
-  height: 300px;
-  width: 300px;
 }
 
 @media print, screen and (max-width: 480px) {
