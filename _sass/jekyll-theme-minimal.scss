@@ -263,6 +263,12 @@ footer {
   }
 }
 
+.profile-picture {
+  border-radius: 999px;
+  height: 300px;
+  width: 300px;
+}
+
 @media print, screen and (max-width: 480px) {
   body {
     padding:15px;
