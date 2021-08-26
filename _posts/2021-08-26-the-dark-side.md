@@ -3,6 +3,8 @@ layout: post
 author: Me
 title: The dark side
 tags: dark-mode jekyll theme
+introduction-title: "Introduction"
+content-title: ""
 ---
 
 Wondering why this site is dark? Well its becuase I am forking the [jekyll themes](https://jekyllrb.com/docs/themes/) [Cayman](https://github.com/pages-themes/cayman) and [Minimal](https://github.com/pages-themes/minimal) from github pages to add dark mode! These forks add an automatic dark theme that can be changed in the **config.yaml** by changing the ```color-scheme``` property to ```auto | auto-deafult-dark | dark | light```.
