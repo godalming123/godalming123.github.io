@@ -1,6 +1,7 @@
 @import "fonts";
 @import "rouge-github";
 @import "my-styles";
+@import "variables";
 
 body {
   background-color: var(--clr-bg);
@@ -120,7 +121,7 @@ kbd {
 }
 
 header {
-  width:270px;
+  width: $sidebar-width;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;

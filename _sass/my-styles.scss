@@ -1,7 +1,7 @@
 .profile-picture {
     border-radius: 999px;
-    max-height: 300px;
-    max-width: 300px;
+    height: $sidebar-width;
+    max-width: $sidebar-width;
   }
   
   .centered {
