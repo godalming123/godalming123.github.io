@@ -3,8 +3,6 @@ layout: post
 author: Me
 title: The Dark Side
 tags: dark-mode jekyll theme
-introduction-title: "Introduction"
-content-title: ""
 front-image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.FCx-hYGX_8GWrXo8KjVbvAHaE8%26pid%3DApi&f=1"
 ---
 
