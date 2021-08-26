@@ -1,7 +1,9 @@
 ![Me!](/me.png "a title")
 # Me!
 A web devoloper, designer and coder.
-ylqlhz0bl@relay.firefox.com
 
-Github
-Blog
+## Contact
+[Email](mailto: ylqlhz0bl@relay.firefox.com)
+
+## Acounts
+[Github](https://github.com/godalming123)
