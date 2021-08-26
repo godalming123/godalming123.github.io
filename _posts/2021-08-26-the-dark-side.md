@@ -15,4 +15,17 @@ You ask, well the auto one will change the theme based on system theme and the o
 [Veiw the pull](https://github.com/pages-themes/minimal/pull/121)
 [See the repo](https://github.com/godalming123/minimal)
 [See more]
+
 ## Updates
+
+- ### We added support for changing the theme in the config.yaml
+  We have just merged a branch that adds support for changing the theme in the config.yaml options just say:
+  ```color-scheme: dark | light | auto | auto-deafualt dark```.
+  The first 2 are prepty self explanatory but where it gets interesting is the last 2.
+  > always remember last is not least
+
+  <small>
+  
+  by ~~Eiensteign~~ **Me. ...Just face it your small brain cant handle 1 single quote by ~~Eienstien~~ Me.**
+  
+  </small>
