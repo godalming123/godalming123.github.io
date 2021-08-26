@@ -8,3 +8,4 @@ content-title: ""
 front-image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Zo9ihPi40rQ1CPL39WI8_wHaDV%26pid%3DApi&f=1"
 ---
 
+Is that 32gb your dream but 💰 is'nt your thing? Your in luck for you can upgrade your ram without buying a new computer.
