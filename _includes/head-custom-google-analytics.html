@@ -11,7 +11,7 @@
     !doNotTrackOption ? false ://if statement is true return false but if true return the value fo the next statement below
     (doNotTrackOption.charAt(0)  === '1' || doNotTrackOption === 'yes') ? true : false;
 
-  if (doNotTrack = false) {//if do not track is desabled
+  if (doNotTrack == false) {//if do not track is desabled
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
