@@ -21,7 +21,7 @@
     //add the active-do-not-track-message id to element
     setTimeout(200)//give website a chance to load the css so message animates in
     setTimeout(
-      () => {document.getElementsByClassName("do-not-track-message").setAttribute("id", "active-do-not-track-message");},
+      () => {document.getElementsByClassName("do-not-track-message")[0].setAttribute("id", "active-do-not-track-message");},
       1000
     )
     
