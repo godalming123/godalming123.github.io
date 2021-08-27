@@ -18,3 +18,19 @@ header > h5 {
   margin-bottom: 5px;
   margin-top: 7px;
 }
+
+#do-not-track-message {
+  //position
+  position: absolute;
+  right: 10px;
+  transform: translateY(-105%);// hide from screen
+  //styles
+  background-color: var(--clr-code-bg);
+  color: var(--clr-code-fg);
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+#active-do-not-track-message {
+  transform: translateY(20%);//add padding between top of screen and element
+}

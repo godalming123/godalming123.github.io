@@ -1,9 +1,24 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5LX6PMSFGK"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  const doNotTrackOption = (
+    window.doNotTrack ||
+    window.navigator.doNotTrack ||
+    window.navigator.msDoNotTrack
+  )
 
-  gtag('config', 'G-5LX6PMSFGK');
+  const doNotTrack =
+    !doNotTrackOption ? false ://if statement is true return false but if true return the value fo the next statement below
+    (doNotTrackOption.charAt(0)  === '1' || doNotTrackOption === 'yes') ? true : false;
+
+  if (doNotTrack = false) {//if do not track is desabled
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5LX6PMSFGK');
+  }
+  else {//if do not track is enabled
+    //add the active-do-not-track-message id to element
+    document.getElementById("do-not-track-message").setAttribute("id", "do-not-track-message active-do-not-track-message");
+  }
 </script>
