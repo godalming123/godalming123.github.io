@@ -19,7 +19,7 @@ header > h5 {
   margin-top: 7px;
 }
 
-#do-not-track-message {
+.do-not-track-message {
   //position
   position: absolute;
   right: 10px;
@@ -34,5 +34,5 @@ header > h5 {
 }
 
 #active-do-not-track-message {
-  transform: translateY(10px) !important;//add padding between top of screen and element
+  transform: translateY(10px);//add padding between top of screen and element
 }
