@@ -8,8 +8,12 @@ layout: default
 
 <img src="{{page.front-image}}"/>
 
-{{content}}
-
+{% case content %}
+  {% when "", nil, false, 0, empty %}
+    <p>This article is still being written.</p>
+  {% else %}  
+    {{content}}
+{% endcase %}
 
 {% if page.tags %}
   <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
