@@ -28,8 +28,8 @@ The most important thing is to remove static from your laptop/desktop so you do 
 **On a laptop? You need to open it and remove the battery, to do this open the laptop and unplug the battery connecter. Se below to do that.**
 
 ###### - Open the laptop
-| Make          | Laptop        | Desktop       |
-| ------------- |:-------------:|:-------------:|
-| Hp            | right-aligned |               |
-| col 2 is      | centered      |               |
-| zebra stripes | are neat      |               |
+| Laptop                                                                | Desktop       |
+|:---------------------------------------------------------------------:|:-------------:|
+| [Hp](https://godalming123.github.io/2021/08/27/open-a-hp-laptop.html) |               |
+| centered                                                              |               |
+| are neat                                                              |               |
