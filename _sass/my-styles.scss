@@ -23,7 +23,8 @@ header > h5 {
   //position
   position: absolute;
   right: 10px;
-  transform: translateY(-105%);// hide from screen
+  bottom: 0px;
+  transform: translateY(105%);// hide from screen
   //styles
   background-color: var(--clr-code-bg);
   color: var(--clr-code-text);
@@ -34,5 +35,5 @@ header > h5 {
 }
 
 #active-do-not-track-message {
-  transform: translateY(10px);//add padding between top of screen and element
+  transform: translateY(-10px);//add padding between top of screen and element
 }
