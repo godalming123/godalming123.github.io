@@ -6,4 +6,3 @@ tags: google anti-competitive
 type: "blog"
 front-image: ""
 ---
-
