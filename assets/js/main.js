@@ -1,6 +1,3 @@
----
----
-
 const doNotTrackOption = (
     window.doNotTrack ||
     window.navigator.doNotTrack ||
