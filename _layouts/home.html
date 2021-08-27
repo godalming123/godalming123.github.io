@@ -8,10 +8,30 @@ layout: default
 
 <h2>My Blogs</h2>
 
-{% for post in site.posts %}
+{% for blog in site.blogs %}
 <div>
-  <small>{{ post.date | date: "%-d %B %Y" }}</small>
-  <li><h2><a href="{{ post.url }}">{{ post.title }}</a></h2></li>
-  {{ post.excerpt }}
+  <small>{{ blog.date | date: "%-d %B %Y" }}</small>
+  <li><h2><a href="{{ post.url }}">{{ blog.title }}</a></h2></li>
+  {{ blog.excerpt }}
+</div>
+{% endfor %}
+
+<h2>My Tuturiols</h2>
+
+{% for tuturiol in site.tuturiols %}
+<div>
+  <small>{{ tuturiol.date | date: "%-d %B %Y" }}</small>
+  <li><h2><a href="{{ post.url }}">{{ tuturiol.title }}</a></h2></li>
+  {{ tuturiol.excerpt }}
+</div>
+{% endfor %}
+
+<h2>What I'm Working On</h2>
+
+{% for working_on in site.working_on %}
+<div>
+  <small>{{ working_on.date | date: "%-d %B %Y" }}</small>
+  <li><h2><a href="{{ working_on.url }}">{{ blog.title }}</a></h2></li>
+  {{ working_on.excerpt }}
 </div>
 {% endfor %}
