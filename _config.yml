@@ -1,7 +1,10 @@
 collections:
-  - blogs
-  - tuturiols
-  - working_on
+  blogs:
+    output: true
+  tuturiols:
+    output: true
+  working_on:
+    output: true
 
 collections_dir: my_collections
 color-scheme: auto-deafualt-dark
