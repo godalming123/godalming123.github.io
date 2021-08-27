@@ -1,2 +1,7 @@
+collections:
+  - blogs
+  - tuturiols
+  - working_on
+
 collections_dir: my_collections
 color-scheme: auto-deafualt-dark
