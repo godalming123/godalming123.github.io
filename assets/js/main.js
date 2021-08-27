@@ -1,5 +1,4 @@
-<script>
-  const doNotTrackOption = (
+const doNotTrackOption = (
     window.doNotTrack ||
     window.navigator.doNotTrack ||
     window.navigator.msDoNotTrack
@@ -32,4 +31,3 @@
     )
     
   }
-</script>
