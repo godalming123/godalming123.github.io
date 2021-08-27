@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<!-- tuturiols -->
+<h2>My Tuturiols</h2>
+
+<p>Welcome to all of my tuturiols</p>
+
+{% for tuturiol in site.tuturiols %}
+<div>
+  <small>{{ tuturiol.date | date: "%-d %B %Y" }}</small>
+  <li><h3><a href="{{ tuturiol.url }}">{{ tuturiol.title }}</a></h2></li>
+  {{ tuturiol.excerpt }}
+</div>
+{% endfor %}
