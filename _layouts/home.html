@@ -12,7 +12,7 @@ layout: default
 {% for working_on in site.working_on %}
 <div>
   <small>{{ working_on.date | date: "%-d %B %Y" }}</small>
-  <li><h2><a href="{{ working_on.url }}">{{ working_on.title }}</a></h2></li>
+  <li><h3><a href="{{ working_on.url }}">{{ working_on.title }}</a></h2></li>
   {{ working_on.excerpt }}
 </div>
 {% endfor %}
@@ -23,7 +23,7 @@ layout: default
 {% for tuturiol in site.tuturiols %}
 <div>
   <small>{{ tuturiol.date | date: "%-d %B %Y" }}</small>
-  <li><h2><a href="{{ tuturiol.url }}">{{ tuturiol.title }}</a></h2></li>
+  <li><h3><a href="{{ tuturiol.url }}">{{ tuturiol.title }}</a></h2></li>
   {{ tuturiol.excerpt }}
 </div>
 {% endfor %}
@@ -34,7 +34,7 @@ layout: default
 {% for blog in site.blogs %}
 <div>
   <small>{{ blog.date | date: "%-d %B %Y" }}</small>
-  <li><h2><a href="{{ blog.url }}">{{ blog.title }}</a></h2></li>
+  <li><h3><a href="{{ blog.url }}">{{ blog.title }}</a></h2></li>
   {{ blog.excerpt }}
 </div>
 {% endfor %}
