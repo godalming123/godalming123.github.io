@@ -1,10 +1,13 @@
 collections:
   blogs:
     output: true
+    sort_by: date
   tuturiols:
     output: true
+    sort_by: date
   working_on:
     output: true
+    sort_by: date
 
 collections_dir: my_collections
 color-scheme: auto-deafualt-dark
