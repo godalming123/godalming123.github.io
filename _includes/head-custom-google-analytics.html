@@ -19,6 +19,7 @@
   }
   else {//if do not track is enabled
     //add the active-do-not-track-message id to element
+    setTimeout(200)//give website a chance to load the css so message animates in
     document.getElementById("do-not-track-message").setAttribute("id", "do-not-track-message active-do-not-track-message");
   }
 </script>
