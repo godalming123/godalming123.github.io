@@ -18,4 +18,18 @@ You know the drill windows releases an update on your computer in middle of work
 6. Finally you need to check your prosescor supports to the ram if so **your good to go!**
 
 #### The next step is to choose your ram
-The best way to get your ram correct is to open your laptop/desktop 
+The best way to get your ram correct is to open your laptop/desktop.
+##### 1. Open your laptop
+###### - Remove static
+The most important thing is to remove static from your laptop/desktop so you do not fry the components. To do this unplug the power and hold the power button for 5 seconds what this does is makes the prosescer gobble up any remining energy in the computer.
+<br>
+**On a desktop? Your done!**
+<br>
+**On a laptop? You need to open it and remove the battery, to do this open the laptop and unplug the battery connecter. Se below to do that.**
+
+###### - Open the laptop
+| Make          | Laptop        | Desktop       |
+| ------------- |:-------------:|:-------------:|
+| Hp            | right-aligned |               |
+| col 2 is      | centered      |               |
+| zebra stripes | are neat      |               |
