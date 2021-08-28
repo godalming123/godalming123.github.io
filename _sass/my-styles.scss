@@ -33,16 +33,3 @@ header > h5 {
   width: 400px;
   transition: 0.5s;
 }
-
-#active-do-not-track-message {
-  transform: translateY(-10px);//add padding between top of screen and element
-}
-
-.transition-slide {
-  opacity: 1;
-  transition: 500ms;
-}
-
-html.is-animating .transition-slide {
-  opacity: 0;
-}
