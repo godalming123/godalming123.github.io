@@ -41,6 +41,7 @@ header > h5 {
 .sort-options {
   display: flex;
   align-items: center;
+  transition: 250ms;
   & > .sort-option {
     background: var(--clr-code-bg-alt);
     border-radius: 5px;
