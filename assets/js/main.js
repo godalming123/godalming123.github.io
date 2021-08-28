@@ -1,5 +1,4 @@
 barba.init({
-  async: true;
   transitions: [{
     name: 'opacity-transition',
     async leave(data) {
