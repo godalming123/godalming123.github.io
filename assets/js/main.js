@@ -1,5 +1,6 @@
 const swup = new Swup();
 
+//Setup Google Analytics
 const doNotTrackOption = (
     window.doNotTrack ||
     window.navigator.doNotTrack ||
