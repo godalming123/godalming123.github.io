@@ -1,3 +1,5 @@
+const swup = new Swup();
+
 const doNotTrackOption = (
     window.doNotTrack ||
     window.navigator.doNotTrack ||

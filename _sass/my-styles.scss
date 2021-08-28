@@ -1,10 +1,10 @@
 @import "variables";
 
 .profile-picture {
-    border-radius: 999px;
-    max-width: 300px;
-    width: 100%;
-  }
+  border-radius: 999px;
+  max-width: 300px;
+  width: 100%;
+}
   
 .centered {
   text-align: center;
@@ -21,7 +21,7 @@ header > h5 {
 
 .do-not-track-message {
   //position
-  position: absolute;
+  position: fixed;
   right: 10px;
   bottom: 0px;
   transform: translateY(105%);// hide from screen
@@ -36,4 +36,13 @@ header > h5 {
 
 #active-do-not-track-message {
   transform: translateY(-10px);//add padding between top of screen and element
+}
+
+.transition-slide {
+  opacity: 1;
+  transition: 500ms;
+}
+
+html.is-animating .transition-slide {
+  opacity: 0;
 }
