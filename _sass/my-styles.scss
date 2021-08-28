@@ -37,3 +37,20 @@ header > h5 {
 #active-do-not-track-message {
   transform: translateY(-10px);//add padding between top of screen and element
 }
+
+.sort-options {
+  display: flex;
+  align-items: center;
+  & > .sort-option {
+    background: var(--clr-code-bg-alt);
+    border-radius: 5px;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    &:hover {
+      background-color: var(--clr-code-bg);
+    }
+    &.sort-option-selected {
+      background-color: var(--clr-code-bg);
+    }
+  }
+}
