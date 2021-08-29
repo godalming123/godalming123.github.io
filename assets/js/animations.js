@@ -46,6 +46,7 @@ const pageItemsFirstLoadAnimation = new animation({
 function pageFirstLoad() {
     sidebarAnimation.enter("header");
     pageItemsFirstLoadAnimation.enter(".wrapper > section")
+    console.info("first load")
 }
 
 barba.init({
@@ -56,7 +57,7 @@ barba.init({
       enter: (data) => pageItemsAnimation.enter(data.next.container),
     },
     {
-      ounce: (data) => pageFirstLoad(),
+      ounce: ({next}) => pageFirstLoad(),
     }
 ]
 });
