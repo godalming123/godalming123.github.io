@@ -17,12 +17,7 @@ class animation {
     }
 }
 
-const sidebarAnimation = new animation({
-  opacity: 0,
-  x: -100,
-  duration: 0.4,
-})
-
+//change page animation
 const pageItemsAnimation = new animation({
     opacity: 0,
     y: 100,
@@ -30,24 +25,38 @@ const pageItemsAnimation = new animation({
     //stagger: 0.2
 })
 
-const pagesItemsFirstLoadAnimation = new animation({
+const hide = new animation({//hide an element so it is'nt even rendered in the veiwport
+    display: "none",
+    duration: 0.001,
+})
+
+//page first loads animations
+const sidebarAnimation = new animation({
+  opacity: 0,
+  x: -100,
+  duration: 0.4,
+})
+
+const pageItemsFirstLoadAnimation = new animation({
     opacity: 0,
     x: 100,
     duration: 0.4,
 })
 
-const hide = new animation({
-    display: "none",
-    duration: 0.001,
-})
+function pageFirstLoad() {
+    sidebarAnimation.enter("header");
+    pageItemsFirstLoadAnimation.enter(".wrapper > section")
+}
 
 barba.init({
-  transitions: [{
-    leave: (data) => pageItemsAnimation.leave(data.current.container),
-    afterLeave: (data) => hide.leave(data.current.container),
-    enter: (data) => pageItemsAnimation.enter(data.next.container),
-  }]
+  transitions: [
+    {
+      leave: (data) => pageItemsAnimation.leave(data.current.container),
+      afterLeave: (data) => hide.leave(data.current.container),
+      enter: (data) => pageItemsAnimation.enter(data.next.container),
+    },
+    {
+      ounce: (data) => pageFirstLoad(),
+    }
+]
 });
-
-//sidebarAnimation.enter("header");
-//pagesItemsFirstLoadAnimation.enter(".wrapper > section");
