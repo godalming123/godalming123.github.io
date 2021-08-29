@@ -36,3 +36,5 @@ barba.init({
     enter: (data) => pageItemsAnimation.enter(data.next.container),
   }]
 });
+
+sidebarAnimation.enter("header")
