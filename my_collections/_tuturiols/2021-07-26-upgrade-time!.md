@@ -30,4 +30,5 @@ The most important thing is to remove static from your laptop/desktop so you do 
 ###### - Open the laptop
 | Laptop                                                                          | Desktop                                                                         |
 |:-------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
-| [Hp](https://godalming123.github.io/tuturiols/2021-08-27-open-a-hp-laptop.html) | test                                                                            |
+<a target="_blank" href="https://godalming123.github.io/tuturiols/2021-08-27-open-a-hp-laptop.html">Hp</a>
+|  | test                                                                            |
