@@ -7,8 +7,9 @@ barba.init({
         });
       },
       enter(data) {
-        return gsap.to(data.next.container, {
-          opacity: 1
+        return gsap.from(data.next.container, {
+          opacity: 0,
+          duration: 300;
         });
       }
     }]
@@ -29,5 +30,5 @@ function pageSidebarLoadAnimation() {
 }
 
 function pageSidebarLeaveAnimation() {
-    
+
 }
