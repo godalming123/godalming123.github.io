@@ -27,7 +27,6 @@ const pageItemsAnimation = new animation({
     opacity: 0,
     y: 100,
     duration: 0.4,
-    display: "none",
     //stagger: 0.2
 })
 
@@ -37,9 +36,14 @@ const pagesItemsFirstLoadAnimation = new animation({
     duration: 0.4,
 })
 
+const hide = new animation({
+    display: "none",
+})
+
 barba.init({
   transitions: [{
     leave: (data) => pageItemsAnimation.leave(data.current.container),
+    afterLeave: (data) => hide.leave(data.current.container),
     enter: (data) => pageItemsAnimation.enter(data.next.container),
   }]
 });
