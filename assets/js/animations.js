@@ -9,7 +9,7 @@ barba.init({
       enter(data) {
         return gsap.from(data.next.container, {
           opacity: 0,
-          duration: 300;
+          duration: 300
         });
       }
     }]
