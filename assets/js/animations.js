@@ -38,3 +38,4 @@ barba.init({
 });
 
 sidebarAnimation.enter("header")
+pageItemsAnimation.enter(".wrapper > section")
