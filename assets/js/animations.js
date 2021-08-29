@@ -30,6 +30,12 @@ const pageItemsAnimation = new animation({
     //stagger: 0.2
 })
 
+const pagesItemsFirstLoadAnimation = new animation({
+    opacity: 0,
+    x: 100,
+    duration: 0.4,
+})
+
 barba.init({
   transitions: [{
     leave: (data) => pageItemsAnimation.leave(data.current.container),
@@ -38,4 +44,4 @@ barba.init({
 });
 
 sidebarAnimation.enter("header")
-pageItemsAnimation.enter(".wrapper > section")
+pagesItemsFirstLoadAnimation.enter(".wrapper > section")
