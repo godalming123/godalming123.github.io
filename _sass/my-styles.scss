@@ -25,6 +25,7 @@ header > h5 {
   right: 10px;
   bottom: 0px;
   transform: translateY(105%);// hide from screen
+  z-index: 20;
   //styles
   background-color: var(--clr-code-bg);
   color: var(--clr-code-text);
