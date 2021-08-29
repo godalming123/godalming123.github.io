@@ -1,3 +1,4 @@
+//page load/change animatoion
 class animation {
     //takes one property animationProps
     //this is just a mapping of gsap props eg:
@@ -60,3 +61,15 @@ barba.init({
 });
 
 pageFirstLoad()
+
+//items load animation
+gsap.regesterPluging(ScrollTrigger)
+
+gsap.from ("section > main > *", {
+    ScrollTrigger: {
+        trigger: "section > main > *",
+        toggleActions: "restart none none none",
+    },
+    opacity: 0,
+    y: 100,
+})
