@@ -38,6 +38,7 @@ const pagesItemsFirstLoadAnimation = new animation({
 
 const hide = new animation({
     display: "none",
+    duration: 0.001;
 })
 
 barba.init({
