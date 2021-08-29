@@ -70,3 +70,10 @@ a > img {
     filter: invert(100%);
   }
 }
+
+@media (max-width: 960px) {
+  header > img.profile-picture {
+    height: 1em;
+    width: 1em;
+  }
+}
