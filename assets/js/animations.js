@@ -48,5 +48,5 @@ barba.init({
   }]
 });
 
-sidebarAnimation.enter("header")
-pagesItemsFirstLoadAnimation.enter(".wrapper > section")
+//sidebarAnimation.enter("header");
+//pagesItemsFirstLoadAnimation.enter(".wrapper > section");
