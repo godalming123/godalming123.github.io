@@ -27,6 +27,7 @@ const pageItemsAnimation = new animation({
     opacity: 0,
     y: 100,
     duration: 0.4,
+    display: "none",
     //stagger: 0.2
 })
 
