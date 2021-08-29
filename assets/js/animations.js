@@ -56,8 +56,7 @@ barba.init({
       afterLeave: (data) => hide.leave(data.current.container),
       enter: (data) => pageItemsAnimation.enter(data.next.container),
     },
-    {
-      ounce: ({next}) => pageFirstLoad(),
-    }
 ]
 });
+
+pageFirstLoad()
