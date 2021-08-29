@@ -25,7 +25,7 @@ const sidebarAnimation = new animation({
 const pageItemsAnimation = new animation({
     opacity: 0,
     y: 100,
-    stagger: 0.2
+    //stagger: 0.2
 })
 
 barba.init({
