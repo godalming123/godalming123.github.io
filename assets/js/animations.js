@@ -19,12 +19,14 @@ class animation {
 
 const sidebarAnimation = new animation({
   opacity: 0,
-  x: -100
+  x: -100,
+  duration: 0.4,
 })
 
 const pageItemsAnimation = new animation({
     opacity: 0,
     y: 100,
+    duration: 0.4,
     //stagger: 0.2
 })
 
