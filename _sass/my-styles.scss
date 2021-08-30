@@ -70,6 +70,7 @@ a > img {
   grid-gap: 0.5em;
 
   &.project {
+    color: var(--clr-text);
     background: var(--clr-code-bg);
     border-radius: 5px;
     cursor: pointer;

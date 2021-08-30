@@ -18,14 +18,15 @@ layout: default
 <!-- working_on -->
 <h2>What I'm Working On</h2>
 
-<div class="projects"></div>
+<div class="projects">
 {% for working_on in site.working_on %}
-<a class="project" href="{{ working_on.url }}>
+<a class="project" href="{{ working_on.url }}">
   <small>{{ working_on.date | date: "%-d %B %Y" }}</small>
-  <li><h3><a href="{{ working_on.url }}">{{ working_on.title }}</a></h2></li>
+  <h3>{{ working_on.title }}</h3>
   {{ working_on.excerpt }}
 </a>
 {% endfor %}
+</div>
 
 <!-- tuturiols -->
 <h2>My Tuturiols</h2>
