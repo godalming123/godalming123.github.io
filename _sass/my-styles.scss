@@ -64,6 +64,21 @@ a > img {
   height: 1em;
   margin-right: 5px;
 }
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, min-max(250px 1fr));
+  grid-gap: 0.5em;
+
+  &.project {
+    background: var(--clr-code-bg);
+    border-radius: 5px;
+    cursor: pointer;
+    border: var(--clr-code-border);
+    &:hover {
+      background: var(--clr-code-bg-alt);
+    }
+  }
+}
 
 @media (prefers-color-scheme: dark) {
   .invert-on-dark {
