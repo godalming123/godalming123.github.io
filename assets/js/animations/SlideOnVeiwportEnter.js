@@ -12,6 +12,7 @@ export function addScrollTrigger(_ = "") {//optional var _ which deafualt to a b
             },
             opacity: 0,
             y: 100,
+            duration: 0.4,
         });
     });
 }
