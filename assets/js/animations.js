@@ -78,14 +78,14 @@ const leaveScrollElement = new animation({
 })
 
 gsap.utils.toArray("section > main > *").forEach(element => {
-    ScrollTrigger.create ({
-        trigger: element,
-        onEnter: () => enterScrollElement.enter(element),
-        onLeave: () => leaveScrollElement.leave(element),
-        onEnterBack: () => leaveScrollElement.enter(element)/*console.log("onLeaveBack", element)*/,
-        onLeaveBack: () => enterScrollElement.leave(element)/*console.log("onEnterBack", element)*/,
-        //markers: true,
-        //start: "top 95%",
-        //end: "top 5%",
-    })
+    gsap.from ((element), {
+        scrollTrigger: {
+            trigger: element,
+            start: "top 95%",
+            end: "top 5%",
+            toggleActions: "none none none pause"
+        },
+        opacity: 0,
+        y: 100,
+    });
 });
