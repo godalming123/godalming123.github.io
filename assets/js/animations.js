@@ -71,7 +71,7 @@ gsap.utils.toArray("section > main > *").forEach(element => {
             trigger: element,
             start: "top 95%",
             end: "top 5%",
-            markers: true,
+            //markers: true,
             //toggleActions: "restart none restart pause"
         },
         opacity: 0,
