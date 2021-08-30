@@ -1,3 +1,6 @@
+//register plugins
+gsap.registerPlugin(ScrollTrigger);
+
 //page load/change animatoion
 class animation {
     //takes one property animationProps
@@ -47,7 +50,21 @@ const pageItemsFirstLoadAnimation = new animation({
 function pageFirstLoad() {
     sidebarAnimation.enter("header");
     pageItemsFirstLoadAnimation.enter(".wrapper > section")
-    console.info("first load")
+}
+
+function addScrollTrigger(_: "") {//optional var _ which deafualt to a blonk string is becuase on line 76 a variable is passed into fuction
+    return gsap.utils.toArray("section > main > *").forEach(element => {
+        gsap.from ((element), {
+            scrollTrigger: {
+                trigger: element,
+                start: "top 95%",
+                end: "top 5%",
+                //toggleActions: "none none none pause"
+            },
+            opacity: 0,
+            y: 100,
+        });
+    });
 }
 
 barba.init({
@@ -56,24 +73,10 @@ barba.init({
       leave: (data) => pageItemsAnimation.leave(data.current.container),
       afterLeave: (data) => hide.leave(data.current.container),
       enter: (data) => pageItemsAnimation.enter(data.next.container),
+      after: addScrollTrigger,
     },
 ]
 });
 
 pageFirstLoad()
-
-//items load animation
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.utils.toArray("section > main > *").forEach(element => {
-    gsap.from ((element), {
-        scrollTrigger: {
-            trigger: element,
-            start: "top 95%",
-            end: "top 5%",
-            //toggleActions: "none none none pause"
-        },
-        opacity: 0,
-        y: 100,
-    });
-});
+addScrollTrigger()
