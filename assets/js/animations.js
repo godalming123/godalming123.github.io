@@ -63,10 +63,10 @@ barba.init({
 pageFirstLoad()
 
 //items load animation
-gsap.regesterPluging(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger)
 
 gsap.from ("section > main > *", {
-    ScrollTrigger: {
+    scrollTrigger: {
         trigger: "section > main > *",
         toggleActions: "restart none none none",
     },
