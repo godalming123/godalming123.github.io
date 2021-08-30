@@ -46,13 +46,6 @@ a:hover, a:focus {
   font-weight: bold;
 }
 
-a small {
-  font-size:11px;
-  color:var(--clr-small-in-a);
-  margin-top:-0.3em;
-  display:block;
-}
-
 a:hover small {
   color:var(--clr-small-in-a);
 }
