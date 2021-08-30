@@ -65,16 +65,25 @@ pageFirstLoad()
 //items load animation
 gsap.registerPlugin(ScrollTrigger)
 
+const enterScrollElement = new animation({
+    opacity: 0,
+    y: 100,
+})
+
+const leaveScrollElement = new animation({
+    opacity: 0,
+    y: -100,
+})
+
 gsap.utils.toArray("section > main > *").forEach(element => {
-    gsap.from ((element), {
-        scrollTrigger: {
-            trigger: element,
-            start: "top 95%",
-            end: "top 5%",
-            //markers: true,
-            //toggleActions: "restart none restart pause"
-        },
-        opacity: 0,
-        y: 100,
-    });
+    ScrollTrigger.create ({
+        trigger: element,
+        onEnter: () => enterScrollElement.enter(element),
+        onLeave: () => leaveScrollElement.leave(element),
+        onEnterBack: () => /*leaveScrollElement.enter(element)*/console.log("onEnterBack"),
+        onLeaveBack: () => /*enterScrollElement.leave(element)*/console.log("onLeaveBack"),
+        //markers: true,
+        start: "top 95%",
+        end: "top 5%",
+    })
 });
