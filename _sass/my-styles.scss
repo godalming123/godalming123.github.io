@@ -73,8 +73,9 @@ a > img {
   grid-template-columns: repeat(auto-fit, min-max(250px 1fr));
   grid-gap: 0.5em;
 
-  &.project {
-    color: var(--clr-text);
+  & .project {
+    color: var(--clr-text) !important;
+    font-weight: 400;
     background: var(--clr-code-bg);
     border-radius: 5px;
     cursor: pointer;
