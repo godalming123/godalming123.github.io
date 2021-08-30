@@ -83,7 +83,7 @@ gsap.utils.toArray("section > main > *").forEach(element => {
         onEnter: () => enterScrollElement.enter(element),
         onLeave: () => leaveScrollElement.leave(element),
         onLeaveBack: () => leaveScrollElement.leave(element)/*console.log("onEnterBack", element)*/,
-        onEnterBack: () => /*enterScrollElement.leave(element)*/console.log("onLeaveBack", element),
+        onEnterBack: () => leaveScrollElement.enter(element)/*console.log("onLeaveBack", element)*/,
         //markers: true,
         start: "top 95%",
         end: "top 5%",
