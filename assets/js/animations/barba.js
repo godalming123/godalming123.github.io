@@ -1,4 +1,4 @@
-import {addScrollTrigger} from 'SlideOnVeiwportEnter.js';
+import {addScrollTrigger} from './SlideOnVeiwportEnter.js';
 
 //page load/change animatoion
 class animation {
