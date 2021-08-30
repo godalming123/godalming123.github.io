@@ -63,7 +63,7 @@ barba.init({
 pageFirstLoad()
 
 //items load animation
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 gsap.utils.toArray("section > main > *").forEach(element => {
     gsap.from ((element), {
@@ -71,7 +71,7 @@ gsap.utils.toArray("section > main > *").forEach(element => {
             trigger: element,
             start: "top 95%",
             end: "top 5%",
-            toggleActions: "none none none pause"
+            //toggleActions: "none none none pause"
         },
         opacity: 0,
         y: 100,
