@@ -65,11 +65,16 @@ pageFirstLoad()
 //items load animation
 gsap.registerPlugin(ScrollTrigger)
 
-gsap.from ("section > main > *", {
-    scrollTrigger: {
-        trigger: "section > main > *",
-        toggleActions: "restart none none none",
-    },
-    opacity: 0,
-    y: 100,
-})
+gsap.utils.toArray("section > main > *").forEach(element => {
+    gsap.from ((element), {
+        scrollTrigger: {
+            trigger: element,
+            start: "top 95%",
+            end: "top 5%",
+            markers: true,
+            //toggleActions: "restart none restart pause"
+        },
+        opacity: 0,
+        y: 100,
+    });
+});
