@@ -65,18 +65,6 @@ pageFirstLoad()
 //items load animation
 gsap.registerPlugin(ScrollTrigger)
 
-const enterScrollElement = new animation({
-    opacity: 0,
-    y: 100,
-    duration: 0.4,
-})
-
-const leaveScrollElement = new animation({
-    opacity: 0,
-    y: -100,
-    duration: 0.4,
-})
-
 gsap.utils.toArray("section > main > *").forEach(element => {
     gsap.from ((element), {
         scrollTrigger: {
