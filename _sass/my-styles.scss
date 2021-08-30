@@ -45,6 +45,8 @@ header > h5 {
   align-items: center;
   & > .sort-option {
     text-align: center;
+    padding: 0px 5px;
+    transition: 250ms,
     cursor: pointer;
     transition: 250ms;
     background: var(--clr-code-bg-alt);
