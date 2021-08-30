@@ -45,8 +45,6 @@ header > h5 {
   align-items: center;
   & > .sort-option {
     text-align: center;
-    padding: 0px 5px;
-    transition: 250ms;
     cursor: pointer;
     transition: 250ms;
     background: var(--clr-code-bg-alt);
@@ -76,6 +74,8 @@ a > img {
   grid-gap: 0.5em;
 
   & .project {
+    padding: 0px 5px;
+    transition: 250ms;
     color: var(--clr-text) !important;
     font-weight: 400;
     background: var(--clr-code-bg);
