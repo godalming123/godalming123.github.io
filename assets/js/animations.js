@@ -68,11 +68,13 @@ gsap.registerPlugin(ScrollTrigger)
 const enterScrollElement = new animation({
     opacity: 0,
     y: 100,
+    duration: 0.4,
 })
 
 const leaveScrollElement = new animation({
     opacity: 0,
     y: -100,
+    duration: 0.4,
 })
 
 gsap.utils.toArray("section > main > *").forEach(element => {
@@ -80,8 +82,8 @@ gsap.utils.toArray("section > main > *").forEach(element => {
         trigger: element,
         onEnter: () => enterScrollElement.enter(element),
         onLeave: () => leaveScrollElement.leave(element),
-        onEnterBack: () => /*leaveScrollElement.enter(element)*/console.log("onEnterBack"),
-        onLeaveBack: () => /*enterScrollElement.leave(element)*/console.log("onLeaveBack"),
+        onLeaveBack: () => leaveScrollElement.enter(element)/*console.log("onEnterBack", element)*/,
+        onEnterBack: () => /*enterScrollElement.leave(element)*/console.log("onLeaveBack", element),
         //markers: true,
         start: "top 95%",
         end: "top 5%",
