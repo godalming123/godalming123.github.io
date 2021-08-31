@@ -4,6 +4,7 @@
   border-radius: 999px;
   max-width: 300px;
   width: 100%;
+  height: auto !important;//to overide line 69 h1 > img
 }
   
 .centered {
@@ -97,7 +98,7 @@ a > img, h1 > img, h2 > img, h3 > img, h4 > img, h5 > img, h6 > img, p > img, .s
 
 @media (max-width: 960px) {
   img.profile-picture {
-    height: 1em;
+    height: 1em !important;
     width: 1em;
   }
 }
