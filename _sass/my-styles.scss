@@ -87,7 +87,7 @@ a > img, h1 > img, h2 > img, h3 > img, h4 > img, h5 > img, h6 > img, p > img, .s
     & .project-image {
       float: left;
       height: 100%;
-      max-height: 300px;
+      max-width: 300px;
       border-radius: 5px;
     }
     &:hover {
