@@ -84,6 +84,12 @@ a > img, h1 > img, h2 > img, h3 > img, h4 > img, h5 > img, h6 > img, p > img, .s
     border-radius: 5px;
     cursor: pointer;
     border: var(--clr-code-border);
+    & .project-image {
+      float: left;
+      height: 100%;
+      max-height: 300px;
+      border-radius: 5px;
+    }
     &:hover {
       background: var(--clr-code-bg-alt);
     }
