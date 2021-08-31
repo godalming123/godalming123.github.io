@@ -1,4 +1,4 @@
-// import {addScrollTrigger} from './SlideOnVeiwportEnter.js';
+import {addScrollTrigger} from './SlideOnVeiwportEnter.js';
 
 //page load/change animatoion
 class animation {
@@ -47,7 +47,7 @@ barba.init({
             return hide.leave(data.current.container);
         },
         enter: (data) => pageItemsAnimation.enter(data.next.container),
-        // after: addScrollTrigger,//this function is from ./page first load animation see line 1
+        after: addScrollTrigger,//this function is from ./page first load animation see line 1
       },
   ]
   });
