@@ -4,14 +4,15 @@ layout: default
 
 <!-- blogs -->
 <main data-barba="container" data-barba-namespace="blogs">
-<h2>My Blogs</h2>
+<h1><img src="/icons/blogger.svg" class="invert-on-dark">My Blogs</h1>
+
 
 <p>Welcome to all of my blogs</p>
 
 {% for blog in site.blogs %}
 <div>
   <small>{{ blog.date | date: "%-d %B %Y" }}</small>
-  <li><h3><a href="{{ blog.url }}">{{ blog.title }}</a></h2></li>
+  <li><h2><a href="{{ blog.url }}">{{ blog.title }}</a></h2></li>
   {{ blog.excerpt }}
 </div>
 {% endfor %}
