@@ -27,6 +27,9 @@ const doNotTrackOption = (
       () => {
         //add the active-do-not-track-message id to message
         document.getElementsByClassName("do-not-track-message")[0].setAttribute("id", "active-do-not-track-message");
+        setTimeout(() => {
+          document.getElementById("active-do-not-track-message").setAttribute("id", "")
+        }, 5000)//diabledo not track message after 5 seconds
       },
       1300
     )
