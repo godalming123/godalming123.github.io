@@ -33,11 +33,19 @@ const hide = new animation({//hide an element so it is'nt even rendered in the v
     duration: 0.001,
 })
 
+function scrollTo(location = 0){
+    document.body.scrollTop = location;
+    document.documentElement.scrollTop = location;
+}
+
 barba.init({
     transitions: [
       {
         leave: (data) => pageItemsAnimation.leave(data.current.container),
-        afterLeave: (data) => hide.leave(data.current.container),
+        afterLeave: (data) => {
+            scrollTo(0);
+            return hide.leave(data.current.container);
+        },
         enter: (data) => pageItemsAnimation.enter(data.next.container),
         // after: addScrollTrigger,//this function is from ./page first load animation see line 1
       },
