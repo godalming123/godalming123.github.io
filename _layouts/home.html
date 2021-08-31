@@ -22,7 +22,9 @@ title: "home"
 <div class="projects">
 {% for working_on in site.working_on %}
 <a class="project" href="{{ working_on.url }}">
+  {% if working_on.front-image != "" %}
   <img src="{{working_on.front-image}}" class="project-image">
+  {%endif%}
   <small>{{ working_on.date | date: "%-d %B %Y" }}</small>
   <h3>{{ working_on.title }}</h3>
   {{ working_on.excerpt }}
@@ -35,7 +37,9 @@ title: "home"
 
 {% for tuturiol in site.tuturiols %}
 <div>
+  {% if tuturiol.front-image != "" %}
   <img src="{{tuturiol.front-image}}" class="project-image">
+  {%endif%}
   <small>{{ tuturiol.date | date: "%-d %B %Y" }}</small>
   <li><h3><a href="{{ tuturiol.url }}">{{ tuturiol.title }}</a></h2></li>
   {{ tuturiol.excerpt }}
@@ -47,7 +51,9 @@ title: "home"
 
 {% for blog in site.blogs %}
 <div>
+  {% if blog.front-image != "" %}
   <img src="{{blog.front-image}}" class="project-image">
+  {%endif%}
   <small>{{ blog.date | date: "%-d %B %Y" }}</small>
   <li><h3><a href="{{ blog.url }}">{{ blog.title }}</a></h3></li>
   {{ blog.excerpt }}

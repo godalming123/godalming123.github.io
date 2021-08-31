@@ -86,8 +86,8 @@ a > img, h1 > img, h2 > img, h3 > img, h4 > img, h5 > img, h6 > img, p > img, .s
     border: var(--clr-code-border);
     & .project-image {
       float: left;
-      height: 100%;
-      max-width: 300px;
+      max-height: 100%;
+      width: 300px;
       border-radius: 5px;
     }
     &:hover {
