@@ -46,7 +46,7 @@ barba.init({
             scrollTo(0);
             return hide.leave(data.current.container);
         },
-        enter: (data) => pageItemsAnimation.enter(data.next.container),
+        //enter: (data) => pageItemsAnimation.enter(data.next.container),
         after: addScrollTrigger,//this function is from ./page first load animation see line 1
       },
   ]

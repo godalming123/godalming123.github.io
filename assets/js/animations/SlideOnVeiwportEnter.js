@@ -1,6 +1,13 @@
 //register plugins
 gsap.registerPlugin(ScrollTrigger);
 
+function sleep(miliseconds) {
+  var currentTime = new Date().getTime();
+  
+  while (currentTime + miliseconds >= new Date().getTime()) {
+  }
+}
+
 export function addScrollTrigger(_ = "") {//optional var _ which deafualt to a blonk string is becuase on line 76 a variable is passed into fuction
     return gsap.utils.toArray("section > main > *").forEach(element => {
         gsap.from ((element), {
@@ -13,9 +20,10 @@ export function addScrollTrigger(_ = "") {//optional var _ which deafualt to a b
             opacity: 0,
             y: 100,
             duration: 0.4,
-            stagger: 0.2,
         });
     });
+
+    sleep(100);
 }
 
 addScrollTrigger()//initialize
