@@ -24,7 +24,7 @@ self.addEventListener('install', e => {
         '/profile-pic/266.png',
         //styles
         '/assets/css/style.css',
-        '/asstes/css/colors-light.css',
+        '/assets/css/colors-light.css',
         '/assets/css/colors-auto.css',
         '/assets/css/colors-dark.css',
         //js
