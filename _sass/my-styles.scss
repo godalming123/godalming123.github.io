@@ -41,6 +41,13 @@ header > h5 {
   transform: translateY(-10px);//add padding between top of screen and element
 }
 
+#minimized-do-not-track-message {
+  transform: translateY(-10px) translateX(100%);
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
 .sort-options {
   display: flex;
   align-items: center;
