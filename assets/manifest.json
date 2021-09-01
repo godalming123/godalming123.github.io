@@ -5,7 +5,7 @@
     "short_name": "My Blog",
     "icons": [
       {
-        "src": "profile_pic.png",
+        "src": "/profile_pic.png",
         "sizes": "192x192",
         "type": "image\/png"
       }
