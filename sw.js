@@ -15,6 +15,7 @@ self.addEventListener('install', e => {
       return cache.addAll([
         //pages
         '/',
+        '/index.html',
         '/working_on.html',
         '/blogs.html',
         '/tuturiols.html',
