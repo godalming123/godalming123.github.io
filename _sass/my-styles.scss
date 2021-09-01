@@ -75,6 +75,7 @@ p, h1, h2, h3, h4, h5, h6, li {
 //an image inside any form of text should be the same size as the text
 a > img, h1 > img, h2 > img, h3 > img, h4 > img, h5 > img, h6 > img, p > img, .sort-option > img {
   height: 1em;
+  width: 1em;
   margin-right: 5px;
 }
 .projects {
