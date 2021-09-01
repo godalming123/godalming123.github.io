@@ -28,13 +28,13 @@ self.addEventListener('install', e => {
         //styles
         '/assets/css/style.css',
         '/asstes/css/colors-light.css',
-        '/assets/css/colors-auto.css'
-        '/assets/css/colors-dark.css'
+        '/assets/css/colors-auto.css',
+        '/assets/css/colors-dark.css',
         //js
         '/assets/js/google-anylytics.js',
         '/assets/js/animations/barba.js',
         '/assets/js/animations/pageFirstLoad.js',
-        '/assets/js/animations/SlideOnVeiwportEnter.js'
+        '/assets/js/animations/SlideOnVeiwportEnter.js',
       ]);
     })
   );
