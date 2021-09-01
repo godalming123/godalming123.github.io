@@ -4,26 +4,26 @@ title: "home"
 ---
 
 <main data-barba="container" data-barba-namespace="home">
-<h1><img src="/icons/hello.svg" class="invert-on-dark">Hello!</h1>
+<h1><img loading="lazy" src="/icons/hello.svg" class="invert-on-dark">Hello!</h1>
 
 {{content}}
 
 <strong>sort by</strong>
 <div class="sort-options">
   <div class="sort-option sort-option-selected">Grouped List</div>
-  <div class="sort-option"><img src="/icons/suitcase.svg" class="invert-on-dark">What I'm working on</div>
-  <div class="sort-option"><img src="/icons/tuturiol.svg" class="invert-on-dark">My Tuturiols</div>
-  <div class="sort-option"><img src="/icons/blogger.svg" class="invert-on-dark">My blogs</div>
+  <div class="sort-option"><img loading="lazy" src="/icons/suitcase.svg" class="invert-on-dark">What I'm working on</div>
+  <div class="sort-option"><img loading="lazy" src="/icons/tuturiol.svg" class="invert-on-dark">My Tuturiols</div>
+  <div class="sort-option"><img loading="lazy" src="/icons/blogger.svg" class="invert-on-dark">My blogs</div>
 </div>
 
 <!-- working_on -->
-<h2><img src="/icons/suitcase.svg" class="invert-on-dark">What I'm Working On</h2>
+<h2><img loading="lazy" src="/icons/suitcase.svg" class="invert-on-dark">What I'm Working On</h2>
 
 <div class="projects">
 {% for working_on in site.working_on %}
 <a class="project" href="{{ working_on.url }}">
   {% if working_on.front-image != "" %}
-  <img src="{{working_on.front-image}}" class="project-image">
+  <img loading="lazy" src="{{working_on.front-image}}" class="project-image">
   {%endif%}
   <small>{{ working_on.date | date: "%-d %B %Y" }}</small>
   <h3>{{ working_on.title }}</h3>
@@ -33,12 +33,12 @@ title: "home"
 </div>
 
 <!-- tuturiols -->
-<h2><img src="/icons/tuturiol.svg" class="invert-on-dark">My Tuturiols</h2>
+<h2><img loading="lazy" src="/icons/tuturiol.svg" class="invert-on-dark">My Tuturiols</h2>
 
 {% for tuturiol in site.tuturiols %}
 <div>
   {% if tuturiol.front-image != "" %}
-  <img src="{{tuturiol.front-image}}" class="project-image">
+  <img loading="lazy" src="{{tuturiol.front-image}}" class="project-image">
   {%endif%}
   <small>{{ tuturiol.date | date: "%-d %B %Y" }}</small>
   <li><h3><a href="{{ tuturiol.url }}">{{ tuturiol.title }}</a></h2></li>
@@ -47,12 +47,12 @@ title: "home"
 {% endfor %}
 
 <!-- blogs -->
-<h2><img src="/icons/blogger.svg" class="invert-on-dark">My Blogs</h2>
+<h2><img loading="lazy" src="/icons/blogger.svg" class="invert-on-dark">My Blogs</h2>
 
 {% for blog in site.blogs %}
 <div>
   {% if blog.front-image != "" %}
-  <img src="{{blog.front-image}}" class="project-image">
+  <img loading="lazy" src="{{blog.front-image}}" class="project-image">
   {%endif%}
   <small>{{ blog.date | date: "%-d %B %Y" }}</small>
   <li><h3><a href="{{ blog.url }}">{{ blog.title }}</a></h3></li>
