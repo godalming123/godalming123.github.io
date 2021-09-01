@@ -6,9 +6,14 @@
     "description" : "I'm a web devoloper designer and coder. Hoping to get A job in jekyll static site devolopment in fact this whole site is built with jekyll and github pages! I have also forked the minimal theme (a theme for jekyll and github pages) to add system based dark mode throughout this site and added the same thing for cayman theme.",
     "icons": [
       {
-        "src": "/profile_pic.png",
+        "src": "/profile-pic/266.webp",
         "sizes": "266x266",
-        "type": "image\/png"
+        "type": "image\/webp"
+      },
+      {
+        "src": "/profile-pic/180.jpeg",
+        "sizes": "266x266",
+        "type": "image\/jpeg"
       }
     ],
     "theme_color": "#1a1a1a",
