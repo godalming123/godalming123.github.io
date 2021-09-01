@@ -21,7 +21,6 @@ export function addScrollTrigger(_ = "") {//optional var _ which deafualt to a b
             y: 100,
             duration: 0.4,
         });
-        sleep(100);
     });
 }
 
