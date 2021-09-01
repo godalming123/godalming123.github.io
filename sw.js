@@ -1,15 +1,11 @@
-function registerServiceWorker() {
-  // register sw script in supporting browsers
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js', { scope: '/' }).then(() => {
-      console.log('Service Worker registered successfully.');
-    }).catch(error => {
-      console.log('Service Worker registration failed:', error);
-    });
-  }
-}
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js', { scope: '/' }).then(() => {
+    console.log('Service Worker registered successfully.');
+  }).catch(error => {
+    console.log('Service Worker registration failed:', error);
+  });
+};
 
-// sw.js
 self.addEventListener('install', e => {
   e.waitUntil(
     // after the service worker is installed,
@@ -40,5 +36,3 @@ self.addEventListener('install', e => {
     })
   );
 });
-
-registerServiceWorker();
