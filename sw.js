@@ -19,12 +19,13 @@ self.addEventListener('install', e => {
       return cache.addAll([
         //pages
         '/',
-        '/index.html',
         '/working_on.html',
         '/blogs.html',
         '/tuturiols.html',
         //imgs
-        '/progile_pic.png',
+        '/profile-pic/180.jpeg',
+        '/profile-pic/266.webp',
+        '/profile-pic/266.png',
         //styles
         '/assets/css/style.css',
         '/asstes/css/colors-light.css',
