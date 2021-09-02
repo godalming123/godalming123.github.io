@@ -1,4 +1,4 @@
-const chacheName = "pwa-chache-v1";
+const cacheName = "pwa-cache-v1";
 
 const assets = [
   //pages
@@ -36,9 +36,9 @@ const assets = [
 
 // install event
 self.addEventListener('install', evt => {
-  //chache files
+  //cache files
   evt.waitUntil(
-    caches.open(chacheName).then(cache => {
+    caches.open(cacheName).then(cache => {
       cache.addAll(assets);
     })
   );
@@ -50,7 +50,7 @@ self.addEventListener('activate', evt => {
     caches.keys().then(keys => {
       return Promise.all(
         keys
-          .filter(key => key !== chacheName)
+          .filter(key => key !== cacheName)
           .map(key => caches.delete(key))
       )
     })
