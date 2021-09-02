@@ -51,7 +51,7 @@ self.addEventListener('activate', evt => {
       return Promise.all(
         keys
           .filter(key => key !== chacheName)
-          .map(key => chaches.delete(key))
+          .map(key => caches.delete(key))
       )
     })
   );
