@@ -1,4 +1,4 @@
-const chacheName = "pwa-chache";
+const chacheName = "pwa-chache-v0";
 
 const assets = [
   //pages
@@ -46,7 +46,15 @@ self.addEventListener('install', evt => {
 
 // activate evenet
 self.addEventListener('activate', evt => {
-  
+  evt.waitUntil(
+    chaches.keys.then(keys => {
+      return Promise.all(
+        keys
+          .filter(key => key !== chacheName)
+          .map(key => chaches.delete(key))
+      )
+    })
+  );
 });
 
 // fetch event
