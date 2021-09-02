@@ -1,9 +1,9 @@
-const chacheName = "pwa-chache-v0";
+const chacheName = "pwa-chache-v1";
 
 const assets = [
   //pages
   '/',
-  //'/index.html',
+  '/fallback_offline',
   '/working_on',
   '/blogs',
   '/tuturiols',
@@ -62,6 +62,6 @@ self.addEventListener('fetch', evt => {
   evt.respondWith(
     caches.match(evt.request).then(
       cacheResp => cacheResp || fetch(evt.request)
-    )
+    ).catch( _ => caches.match('/fallback_offline'))
   );
 });
