@@ -3,10 +3,10 @@ const chacheName = "pwa-chache";
 const assets = [
   //pages
   '/',
-  '/index.html',
-  '/working_on.html',
-  '/blogs.html',
-  '/tuturiols.html',
+  //'/index.html',
+  '/working_on',
+  '/blogs',
+  '/tuturiols',
   //profile pictures
   '/profile-pic/180.jpeg',
   '/profile-pic/266.webp',
