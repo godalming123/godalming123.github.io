@@ -47,7 +47,7 @@ self.addEventListener('install', evt => {
 // activate evenet
 self.addEventListener('activate', evt => {
   evt.waitUntil(
-    caches.keys.then(keys => {
+    caches.keys().then(keys => {
       return Promise.all(
         keys
           .filter(key => key !== chacheName)
