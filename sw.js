@@ -19,10 +19,15 @@ self.addEventListener('install', e => {
         '/working_on.html',
         '/blogs.html',
         '/tuturiols.html',
-        //imgs
+        //profile pictures
         '/profile-pic/180.jpeg',
         '/profile-pic/266.webp',
         '/profile-pic/266.png',
+        //icons
+        '/icons/blogger.svg',
+        '/icons/hello.svg',
+        '/icons/home.svg',
+        '/icons/suitcase.svg',
         //styles
         '/assets/css/style.css',
         '/assets/css/colors-light.css',
@@ -33,6 +38,13 @@ self.addEventListener('install', e => {
         '/assets/js/animations/barba.js',
         '/assets/js/animations/pageFirstLoad.js',
         '/assets/js/animations/SlideOnVeiwportEnter.js',
+        '/sw.js',
+        //js dependencys
+        'https://unpkg.com/@barba/core',
+        'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js',
+        'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js',
+        //other
+        '/assets/manifest.json'
       ]);
     })
   );
