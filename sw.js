@@ -40,7 +40,7 @@ self.addEventListener('install', evt => {
   evt.waitUntil(
     caches.open(chacheName).then(cache => {
       cache.addAll(assets);
-    });
+    })
   );
 });
 
