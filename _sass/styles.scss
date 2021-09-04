@@ -21,6 +21,13 @@ body {
   .alignment-2 > * {
     text-align: left;
   }
+
+//an image inside any form of text should be the same size as the text
+a > img, h1 > img, h2 > img, h3 > img, h4 > img, h5 > img, h6 > img, p > img, .sort-option > img {
+    height: 1em;
+    width: 1em;
+    margin-right: 5px;
+  }
   
   // card grid
   .card-container {
@@ -76,15 +83,15 @@ body {
     right: 5px;
     z-index: 3;
   }
-  .profile-picture {
-    border-radius: 999px;
-    max-width: 250px;
-    width: 100%;
-    @media (max-height: 800px) {
-      heigth: 1em;
-      width: 1em;
+  @media (min-height: 800px) {//if our height is greater then 800px
+    .profile-picture {
+        border-radius: 999px;
+        max-width: 250px;
+        width: 100%;
+        height: auto;
     }
-  }
+}
+
   
   // element hide animation
   .hidden {
