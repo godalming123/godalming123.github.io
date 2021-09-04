@@ -22,56 +22,44 @@ title: "home"
 <!-- working_on -->
 <h2><img loading="lazy" src="/icons/suitcase.svg" class="invert-on-dark">What I'm Working On</h2>
 
-<div class="projects">
+<div  class="card-container alignment-2">
 {% for working_on in site.working_on %}
-<div onclick='window.location.href = "{{ working_on.url }}";' class="card-container alignment-2">
-  <div class="card grey lighten-4 waves-effect">
-    <div class="card-content">
-      <span class="card-title">"{{ working_on.title }}"</span>
-      <p>this is the desription of something I am working on but I do not know how to make it long enough!</p>
-    </div>
-  </div>
-  <div class="card grey lighten-4 waves-effect">
+  <div onclick='window.location.href = "{{ working_on.url }}";' class="card grey lighten-4 waves-effect">
+    {% if working_on.front-image != "" %}
     <div class="card-image">
-      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Yi8gCB7qTH6WI6PzaT9UJAHaEL%26pid%3DApi&f=1">
-      <span class="card-title">Wide Image</span>
+      <img src="{{ working_on.front-image }}">
     </div>
+  {%endif%}
     <div class="card-content">
-      <span class="card-title">Something I'm workig on</span>
-      <p>this is the desription of something I am working on but I do not know how to make it long enough!</p>
-    </div>
-  </div>
-  <div class="card grey lighten-4 waves-effect">
-    <div class="card-content">
-      <span class="card-title">Another Thing I'm workig on</span>
-      <p>this is the desription of something I am working on but I do not know how to make it long enough!</p>
+      <span class="card-smalltext">{{ working_on.date | date: "%-d %B %Y" }}</span>
+      <span class="card-title">{{ working_on.title }}</span>
+      <p>{{ working_on.excerpt }}</p>
     </div>
   </div>
 </div>
-<a class="project" href="{{ working_on.url }}">
-  {% if working_on.front-image != "" %}
-  <img loading="lazy" src="{{working_on.front-image}}" class="project-image">
-  {%endif%}
-  <small>{{ working_on.date | date: "%-d %B %Y" }}</small>
-  <h3>{{ working_on.title }}</h3>
-  {{ working_on.excerpt }}
-</a>
 {% endfor %}
 </div>
 
 <!-- tuturiols -->
 <h2><img loading="lazy" src="/icons/tuturiol.svg" class="invert-on-dark">My Tuturiols</h2>
 
-{% for tuturiol in site.tuturiols %}
-<div>
-  {% if tuturiol.front-image != "" %}
-  <img loading="lazy" src="{{tuturiol.front-image}}" class="project-image">
-  {%endif%}
-  <small>{{ tuturiol.date | date: "%-d %B %Y" }}</small>
-  <li><h3><a href="{{ tuturiol.url }}">{{ tuturiol.title }}</a></h2></li>
-  {{ tuturiol.excerpt }}
-</div>
-{% endfor %}
+<div  class="card-container alignment-2">
+  {% for tuturiol in site.tuturiols %}
+    <div onclick='window.location.href = "{{ tuturiol.url }}";' class="card grey lighten-4 waves-effect">
+      {% if tuturiol.front-image != "" %}
+      <div class="card-image">
+        <img src="{{ tuturiol.front-image }}">
+      </div>
+    {%endif%}
+      <div class="card-content">
+        <span class="card-smalltext">{{ tuturiol.date | date: "%-d %B %Y" }}</span>
+        <span class="card-title">{{ tuturiol.title }}</span>
+        <p>{{ tuturiol.excerpt }}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+  </div>
 
 <!-- blogs -->
 <h2><img loading="lazy" src="/icons/blogger.svg" class="invert-on-dark">My Blogs</h2>

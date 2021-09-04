@@ -1,4 +1,4 @@
-const cacheName = "pwa-cache-v1";
+const cacheName = "pwa-cache-v2";
 
 const assets = [
   //pages
