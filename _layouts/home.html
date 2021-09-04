@@ -8,12 +8,15 @@ title: "home"
 
 {{content}}
 
-<strong>sort by</strong>
-<div class="sort-options">
-  <div class="sort-option sort-option-selected">Grouped List</div>
-  <div class="sort-option"><img loading="lazy" src="/icons/suitcase.svg" class="invert-on-dark">What I'm working on</div>
-  <div class="sort-option"><img loading="lazy" src="/icons/tuturiol.svg" class="invert-on-dark">My Tuturiols</div>
-  <div class="sort-option"><img loading="lazy" src="/icons/blogger.svg" class="invert-on-dark">My blogs</div>
+<!-- sort options -->
+<!-- display block so we can set max-width on line 13 in style.css-->
+<strong class="display-block">Sort By</strong>
+<div class="sort-btns alignment-2">
+  <a class="btn waves-effect waves-light disabled">Grouped List</a>
+  <a class="btn waves-effect waves-light">What I'm Working On</a>
+  <a class="btn waves-effect waves-light">My Tuturiols</a>
+  <a class="btn waves-effect waves-light">My Blogs</a>
+  <a class="btn waves-effect waves-light">Potentilly Coming Soon</a>
 </div>
 
 <!-- working_on -->
@@ -21,6 +24,30 @@ title: "home"
 
 <div class="projects">
 {% for working_on in site.working_on %}
+<div onclick='window.location.href = "{{ working_on.url }}";' class="card-container alignment-2">
+  <div class="card grey lighten-4 waves-effect">
+    <div class="card-content">
+      <span class="card-title">"{{ working_on.title }}"</span>
+      <p>this is the desription of something I am working on but I do not know how to make it long enough!</p>
+    </div>
+  </div>
+  <div class="card grey lighten-4 waves-effect">
+    <div class="card-image">
+      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Yi8gCB7qTH6WI6PzaT9UJAHaEL%26pid%3DApi&f=1">
+      <span class="card-title">Wide Image</span>
+    </div>
+    <div class="card-content">
+      <span class="card-title">Something I'm workig on</span>
+      <p>this is the desription of something I am working on but I do not know how to make it long enough!</p>
+    </div>
+  </div>
+  <div class="card grey lighten-4 waves-effect">
+    <div class="card-content">
+      <span class="card-title">Another Thing I'm workig on</span>
+      <p>this is the desription of something I am working on but I do not know how to make it long enough!</p>
+    </div>
+  </div>
+</div>
 <a class="project" href="{{ working_on.url }}">
   {% if working_on.front-image != "" %}
   <img loading="lazy" src="{{working_on.front-image}}" class="project-image">

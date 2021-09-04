@@ -25,11 +25,10 @@ const doNotTrackOption = (
     //give website a chance to load the css so the message animates in
     setTimeout(
       () => {
-        //add the active-do-not-track-message id to message
-        document.getElementsByClassName("do-not-track-message")[0].setAttribute("id", "active-do-not-track-message");
-        setTimeout(() => {
-          document.getElementById("active-do-not-track-message").setAttribute("id", "minimized-do-not-track-message")
-        }, 5000)//disable do not track message after 5 seconds
+        M.toast({html: ```
+          We have disabled google anylytics as do not track option is enabled in your browser if this is incorrect please file a bug 
+          <a href="https://github.com/godalming123/godalming123.github.io/issues/new">here</a>
+        ```})
       },
       1300
     )

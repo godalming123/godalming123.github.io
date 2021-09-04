@@ -1,0 +1,96 @@
+body {
+    padding: 0px 10px;
+  }
+  
+  //alignment styles
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  .alignment-1 {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .alignment-2 {
+    text-align: center;
+  }
+  .alignment-2 > * {
+    text-align: left;
+  }
+  
+  // card grid
+  .card-container {
+    margin: 0 auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    grid-gap: 0 1.25em;
+    max-width: 1200px;
+  }
+  .card-fetuered {
+    grid-column: span 2;
+  }
+  .card-image > img {
+    object-fit: cover;
+    height: 100%;
+  }
+  @supports (grid-template-rows: masonry) {
+    .card-container {
+      grid-template-rows: masonry;
+      //align-tracks: stretch;
+    }
+  }
+  //cards themselfs
+  .card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  }
+  .card-content {
+    grid-template-columns: 2;
+  }
+  
+  //fix bad font weight on strong
+  strong {
+    font-weight: bold;
+  }
+  
+  //img alt text styles
+  img {
+    font: goergia 300 italic;
+  }
+  
+  // sidenav and elemnts inside it styles
+  .sidenav {
+    text-align: center;
+  }
+  .sidenav-trigger {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 3;
+  }
+  .profile-picture {
+    border-radius: 999px;
+    max-width: 250px;
+    width: 100%;
+    @media (max-height: 800px) {
+      heigth: 1em;
+      width: 1em;
+    }
+  }
+  
+  // element hide animation
+  .hidden {
+  }
+  .gonna-hide {
+    transition: 500ms;
+  }
+  
+  //displays
+  .display-block {
+    display: block;
+  }
