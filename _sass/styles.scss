@@ -34,6 +34,9 @@ body {
   .card-fetuered {
     grid-column: span 2;
   }
+  .card-smalltext {
+    text-transform: uppercase;
+  }
   .card-image > img {
     object-fit: cover;
     height: 100%;
