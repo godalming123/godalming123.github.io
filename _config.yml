@@ -5,7 +5,7 @@ collections:
   My_Tuturiols:
     output: true
     sort_by: date
-  What_I'm_Working_On:
+  What_I_Am_Working_On:
     output: true
     sort_by: date
 
