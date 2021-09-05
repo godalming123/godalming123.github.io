@@ -23,6 +23,7 @@ title: "home"
 {% for collection in site.collections %}
   <h4>{{ collection.label | replace: "_", " " }}</h4>
 
+  <div class="card-container alignment-2">
   {% for document in collection.docs %}
     <div onclick=onclick='window.location.href = "{{ document.url }}";' class="card grey lighten-4 waves-effect">
       {% if document.front-image != "" %}
@@ -37,6 +38,7 @@ title: "home"
       </div>
     </div>
   {% endfor %}
+  </div>
 {% endfor %}
 <!--
 working_on 
