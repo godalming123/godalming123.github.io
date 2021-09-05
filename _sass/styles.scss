@@ -12,6 +12,7 @@ body {
   h6,
   strong,
   small,
+  li,
   .alignment-1 {
     max-width: 500px;
     margin: 0 auto;
@@ -19,6 +20,7 @@ body {
   img,
   .alignment-2 {
     text-align: center;
+    margin: auto;
   }
   .alignment-2 > * {
     text-align: left;
