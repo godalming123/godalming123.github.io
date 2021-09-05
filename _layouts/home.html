@@ -4,7 +4,7 @@ title: "home"
 ---
 
 <main data-barba="container" data-barba-namespace="home">
-<h1><img loading="lazy" src="/icons/hello.svg" class="invert-on-dark">Hello!</h1>
+<h1 id="hello"><img loading="lazy" src="/icons/hello.svg" class="invert-on-dark">Hello!</h1>
 
 {{content}}
 
@@ -21,7 +21,7 @@ title: "home"
 
 <!-- sections -->
 {% for collection in site.collections %}
-  <h4>{{ collection.label | replace: "_", " " }}</h4>
+  <h4 id="{{ collection.label }}" >{{ collection.label | replace: "_", " " }}</h4>
 
   <div class="card-container alignment-2">
   {% for document in collection.docs %}
