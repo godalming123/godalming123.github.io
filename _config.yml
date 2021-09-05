@@ -1,11 +1,11 @@
 collections:
-  My_Blogs:
+  What_I_Am_Working_On:
     output: true
     sort_by: date
   My_Tuturiols:
     output: true
     sort_by: date
-  What_I_Am_Working_On:
+  My_Blogs:
     output: true
     sort_by: date
 
