@@ -13,6 +13,7 @@ body {
   strong,
   small,
   li,
+  .footer-text,
   .alignment-1 {
     max-width: 500px;
     margin: 0 auto;
@@ -107,4 +108,9 @@ a > img, h1 > img, h2 > img, h3 > img, h4 > img, h5 > img, h6 > img, p > img, .s
   //displays
   .display-block {
     display: block;
+  }
+
+  footer {
+      background: black;
+      color: white;
   }
