@@ -19,7 +19,27 @@ title: "home"
   <a class="btn waves-effect waves-light">Potentilly Coming Soon</a>
 </div>
 
-<!-- working_on -->
+<!-- sections -->
+{% for collection in site.collections %}
+  <h4>{{ collection.label | replace: "_", " " }}</h4>
+
+  {% for document in collection.docs %}
+    <div onclick=onclick='window.location.href = "{{ document.url }}";' class="card grey lighten-4 waves-effect">
+      {% if document.front-image != "" %}
+        <div class="card-image">
+          <img src="{{ document.front-image }}">
+        </div>
+      {%endif%}
+      <div class="card-content">
+        <span class="card-smalltext">{{ document.date | date: "%-d %B %Y" }}</span>
+        <span class="card-title">{{ document.title }}</span>
+        <p>{{ decument.excerpt }}</p>
+      </div>
+    </div>
+  {% endfor %}
+{% endfor %}
+<!--
+working_on 
 <h2><img loading="lazy" src="/icons/suitcase.svg" class="invert-on-dark">What I'm Working On</h2>
 
 <div  class="card-container alignment-2">
@@ -39,10 +59,10 @@ title: "home"
 {% endfor %}
 </div>
 
-<!-- tuturiols -->
+tuturiols 
 <h2><img loading="lazy" src="/icons/tuturiol.svg" class="invert-on-dark">My Tuturiols</h2>
 
-<div  class="card-container alignment-2">
+<div class="card-container alignment-2">
   {% for tuturiol in site.tuturiols %}
     <div onclick='window.location.href = "{{ tuturiol.url }}";' class="card grey lighten-4 waves-effect">
       {% if tuturiol.front-image != "" %}
@@ -59,7 +79,7 @@ title: "home"
   {% endfor %}
   </div>
 
-<!-- blogs -->
+blogs
 <h2><img loading="lazy" src="/icons/blogger.svg" class="invert-on-dark">My Blogs</h2>
 
 {% for blog in site.blogs %}
@@ -73,3 +93,4 @@ title: "home"
 </div>
 {% endfor %}
 </main>
+-->
