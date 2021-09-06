@@ -3,15 +3,23 @@ collections:
     output: true
     sort_by: date
     name: What I'm Working On
-    description: The Latest Things I'm Working On
+    description: The latest things I'm working on
     icon: /icons/suitcase.svg
     iconAlt: a suitcase
-  My_Tuturiols:
+  tuturiols:
     output: true
     sort_by: date
-  My_Blogs:
+    name: My Tuturiols
+    description: Browse all of my tuturiols
+    #icon: /icons/tuturiol.svg
+    #iconAlt: a tuturiol
+  blogs:
     output: true
     sort_by: date
+    name: My Blogs
+    description: The latest happening's
+    icon: /icons/blogger.svg
+    iconAlt: a capitla B
 
 collections_dir: my_collections
 color-scheme: auto-deafualt-dark
