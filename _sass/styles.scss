@@ -6,6 +6,26 @@ body {
     padding: 0px 10px;
   }
   
+//clickable divs
+.clickable-div{
+  position: relative;
+}
+
+.clickable-div > .clickable-div-link{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.clickable-div a {
+  z-index: 20;
+  position: relative;
+}
+  
   //alignment styles
   p,
   h1,

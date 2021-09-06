@@ -25,7 +25,8 @@ title: "home"
 
   <div class="card-container alignment-2">
   {% for document in collection.docs %}
-    <div onclick='window.location.href = "{{ document.url }}";' class="card grey lighten-4 waves-effect">
+    <div class="clickable-div card grey lighten-4 waves-effect">
+      <a href="{{ document.url }}" class="clickable-div-link">text of my link</a>
       {% if document.front-image != "" %}
         <div class="card-image">
           <img src="{{ document.front-image }}">
