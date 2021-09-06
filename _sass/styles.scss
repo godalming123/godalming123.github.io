@@ -2,10 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-    padding: 0px 10px;
-  }
-  
 //clickable divs
 .clickable-div{
   position: relative;
@@ -41,6 +37,7 @@ body {
   .alignment-1 {
     max-width: 500px;
     margin: 0 auto;
+    width: calc(100% - 10px);
   }
   img,
   .alignment-2 {
@@ -61,7 +58,7 @@ a > img, h1 > img, h2 > img, h3 > img, h4 > img, h5 > img, h6 > img, p > img, .s
   // card grid
   .card-container {
     margin: 0 auto;
-    width: auto;
+    padding: 0 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
     grid-gap: 0 1.25em;
