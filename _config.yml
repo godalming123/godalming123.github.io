@@ -1,7 +1,11 @@
 collections:
-  What_I_Am_Working_On:
+  working_on:
     output: true
     sort_by: date
+    name: What I'm Working On
+    description: The Latest Things I'm Working On
+    icon: /icons/suitcase.svg
+    iconAlt: a suitcase
   My_Tuturiols:
     output: true
     sort_by: date

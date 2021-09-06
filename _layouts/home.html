@@ -21,7 +21,17 @@ title: "home"
 
 <!-- sections -->
 {% for collection in site.collections %}
-  <h4 id="{{ collection.label }}" >{{ collection.label | replace: "_", " " }}</h4>
+  <h4 id="{{ collection.label }}" >
+    {% if collection.icon != "" %}
+      <img src="{{ collection.icon }}" alt="{{ collection.iconAlt }}" class="invert-on-dark">
+    {% endif %}
+
+    {{ collection.name }}
+  </h4>
+
+  {% if collection.description != "" %}
+    <p>{{ collection.description }}</p>
+  {% endif %}
 
   <div class="card-container alignment-2">
   {% for document in collection.docs %}
@@ -41,59 +51,3 @@ title: "home"
   {% endfor %}
   </div>
 {% endfor %}
-<!--
-working_on 
-<h2><img loading="lazy" src="/icons/suitcase.svg" class="invert-on-dark">What I'm Working On</h2>
-
-<div  class="card-container alignment-2">
-{% for working_on in site.working_on %}
-  <div onclick='window.location.href = "{{ working_on.url }}";' class="card grey lighten-4 waves-effect">
-    {% if working_on.front-image != "" %}
-    <div class="card-image">
-      <img src="{{ working_on.front-image }}">
-    </div>
-  {%endif%}
-    <div class="card-content">
-      <span class="card-smalltext">{{ working_on.date | date: "%-d %B %Y" }}</span>
-      <span class="card-title">{{ working_on.title }}</span>
-      <p>{{ working_on.excerpt }}</p>
-    </div>
-  </div>
-{% endfor %}
-</div>
-
-tuturiols 
-<h2><img loading="lazy" src="/icons/tuturiol.svg" class="invert-on-dark">My Tuturiols</h2>
-
-<div class="card-container alignment-2">
-  {% for tuturiol in site.tuturiols %}
-    <div onclick='window.location.href = "{{ tuturiol.url }}";' class="card grey lighten-4 waves-effect">
-      {% if tuturiol.front-image != "" %}
-      <div class="card-image">
-        <img src="{{ tuturiol.front-image }}">
-      </div>
-    {%endif%}
-      <div class="card-content">
-        <span class="card-smalltext">{{ tuturiol.date | date: "%-d %B %Y" }}</span>
-        <span class="card-title">{{ tuturiol.title }}</span>
-        <p>{{ tuturiol.excerpt }}</p>
-      </div>
-    </div>
-  {% endfor %}
-  </div>
-
-blogs
-<h2><img loading="lazy" src="/icons/blogger.svg" class="invert-on-dark">My Blogs</h2>
-
-{% for blog in site.blogs %}
-<div>
-  {% if blog.front-image != "" %}
-  <img loading="lazy" src="{{blog.front-image}}" class="project-image">
-  {%endif%}
-  <small>{{ blog.date | date: "%-d %B %Y" }}</small>
-  <li><h3><a href="{{ blog.url }}">{{ blog.title }}</a></h3></li>
-  {{ blog.excerpt }}
-</div>
-{% endfor %}
-</main>
--->
