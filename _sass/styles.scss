@@ -109,15 +109,16 @@ a > img, h1 > img, h2 > img, h3 > img, h4 > img, h5 > img, h6 > img, p > img, .s
     right: 5px;
     z-index: 3;
   }
+
+.profile-picture {
+  border-radius: 999px;
   @media (min-height: 800px) {//if our height is greater then 800px
-    .profile-picture {
-        border-radius: 999px;
         max-width: 250px;
         width: 100%;
         height: auto;
-    }
+        margin-top: 10px;
 }
-
+}
   
   // element hide animation
   .hidden {
@@ -137,3 +138,14 @@ a > img, h1 > img, h2 > img, h3 > img, h4 > img, h5 > img, h6 > img, p > img, .s
       padding: 20px 0;
       margin-top: 20px;
   }
+
+//sidebar opens
+@media (min-width: 992px) {
+  body {
+    padding-right: 300px
+  }
+  .sidenav{
+    box-shadow: none;
+    transition: 250ms;
+  }
+}
