@@ -75,13 +75,14 @@ barba.init({
       },//to
       
       //other transitions
-      {
+      /*{
+        //this brakes transition
         once: ({ next }) => gsap.from(next.container, {
             opacity: 0,
             y: 10,
             duration: 0.4
         }),
-      },
+      },*/
       {
         //after: addScrollTrigger,//this function is from ./page first load animation see line 1
       }
