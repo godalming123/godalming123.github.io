@@ -15,9 +15,10 @@
       {% include menu.html %}
 
       <section data-barba="wrapper">
+        <main data-barba="container" data-barba-namespace="{{page.barba-page-namespace}}">
           {{ content }}
+          {% include credits.html %}
+        </main>
       </section>
-      
-      {% include credits.html %}
   </body>
 </html>
