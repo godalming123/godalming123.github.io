@@ -5,6 +5,7 @@ title: Open An Hp Laptop
 tags: open
 type: "tuturiol"
 front-image: ""
+barba-page-namespace: post
 ---
 
 This is a guide to open most hp laptop's if this does not work with your laptop try and find another guide.

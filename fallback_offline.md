@@ -1,6 +1,7 @@
 ---
 layout: deafualt
 title: OOPS!
+barba-page-namespace: fallback-offline
 ---
 
 ##### OOPS!

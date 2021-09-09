@@ -2,6 +2,7 @@
 layout: post
 author: Me
 title: Anti competitive?
+barba-page-namespace: post
 tags: google anti-competitive
 front-image: ""
 ---
