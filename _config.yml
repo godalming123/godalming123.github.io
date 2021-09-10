@@ -1,4 +1,11 @@
 collections:
+  potentially_coming_soon:
+    output: true
+    sort_by: date
+    name: Potentially Coming Soom
+    description: The latest things that could be in the pipeline
+    #icon: /icons/suitcase.svg
+    #iconAlt: a suitcase
   working_on:
     output: true
     sort_by: date
