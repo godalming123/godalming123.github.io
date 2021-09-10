@@ -24,12 +24,7 @@ const doNotTrackOption = (
   else {//if do not track is enabled
     //give website a chance to load the css so the message animates in
     setTimeout(
-      () => {
-        M.toast({html: ```
-          We have disabled google anylytics as do not track option is enabled in your browser if this is incorrect please file a bug 
-          <a href="https://github.com/godalming123/godalming123.github.io/issues/new">here</a>
-        ```})
-      },
+      () => M.toast({html: "We have disabled google anylytics as do not track option is enabled in your browser if this is incorrect please file a bug <a href='https://github.com/godalming123/godalming123.github.io/issues/new'>here</a>"}),
       1300
     )
     
