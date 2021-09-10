@@ -33,6 +33,8 @@ h6,
 strong,
 small,
 li,
+code,
+blockquote,
 .footer-text,
 .alignment-1 {
   max-width: 500px;
@@ -127,18 +129,6 @@ img {
       height: auto;
       margin-top: 10px;
   }
-}
-
-// element hide animation
-.hidden {
-}
-.gonna-hide {
-  transition: 500ms;
-}
-
-//displays
-.display-block {
-  display: block;
 }
 
 footer {
