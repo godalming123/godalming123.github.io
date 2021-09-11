@@ -23,7 +23,7 @@ title: "home"
   <!-- title -->
   <h4 id="{{ collection.label }}" >
     {% if collection.icon != "" %}
-      <img src="{{ collection.icon }}" alt="{{ collection.iconAlt }}" class="invert-on-dark">
+      <img loading="lazy" src="{{ collection.icon }}" alt="{{ collection.iconAlt }}" class="invert-on-dark">
     {% endif %}
 
     {{ collection.name }}
@@ -44,7 +44,7 @@ title: "home"
         <!-- image -->
         {% if document.front-image != "" %}
           <div class="card-image">
-            <img src="{{ document.front-image }}">
+            <img loading="lazy" src="{{ document.front-image }}">
           </div>
         {%endif%}
         <!-- text -->
