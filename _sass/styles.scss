@@ -35,7 +35,6 @@ small,
 li,
 code,
 blockquote,
-.footer-text,
 .alignment-1 {
   max-width: 500px;
   margin: 0 auto;
@@ -136,6 +135,9 @@ footer {
   color: white;
   padding: 20px 0;
   margin-top: 20px;
+  & > * {
+    display: block;
+  }
 }
 
 //displays
