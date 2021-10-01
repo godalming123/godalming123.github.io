@@ -1,7 +1,7 @@
 collections:
   potentially_coming_soon:
     sort_by: date
-    name: Potentially Coming Soom
+    name: Potentially Coming Soon
     description: The latest things that could be in the pipeline
     #icon: /icons/suitcase.svg
     #iconAlt: a suitcase
