@@ -23,7 +23,7 @@ color-scheme: auto | auto-deafult-dark | dark | light
 You ask, well the auto one will change the theme based on system theme and the other one does the same but if the browser doesnt support getting the system-theme it will deafualt to dark.
 <a target="_blank" href="https://godalming123.github.io/minimal/">Try It Out</a>
 <a target="_blank" href="https://github.com/pages-themes/minimal/pull/121">Veiw The Pull</a>
-<a target="_blank" href="https://github.com/godalming123/minimal">Start The Repo</a>
+<a target="_blank" href="https://github.com/godalming123/minimal">Star The Repo</a>
 
 ## Updates
 - ### I added support for changing the theme in the config.yaml
