@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.sidenav li > a > img {
+  float:left;
+}
+
 //clickable divs
 .clickable-div {
   position: relative;
