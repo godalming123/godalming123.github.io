@@ -21,6 +21,7 @@ color-scheme: auto | auto-deafult-dark | dark | light
 > What do the first 2 options do?
   
 You ask, well the auto one will change the theme based on system theme and the other one does the same but if the browser doesnt support getting the system-theme it will deafualt to dark.
+<br>
 <a target="_blank" href="https://godalming123.github.io/minimal/">Try It Out</a> |
 <a target="_blank" href="https://github.com/pages-themes/minimal/pull/121">Veiw The Pull</a> |
 <a target="_blank" href="https://github.com/godalming123/minimal">Star The Repo</a>
