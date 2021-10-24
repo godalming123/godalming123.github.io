@@ -11,6 +11,13 @@ if ('serviceWorker' in navigator) {
 
 //side bar
 var SidebarInstances = M.Sidenav.init(document.querySelectorAll('.sidenav'), {"edge": "right"});
+document.querySelectorAll(".closeSidenavs").forEach((elem) => {
+  elem.onclick = () => {
+    for ( let _ = 0; _ <= SidebarInstances.length ; _++ ) {
+      SidebarInstances[_].close();
+    }
+  }
+})
 //collapsable
 var CollapsableInstances = M.Collapsible.init(document.querySelectorAll('.collapsible'), {});
 //sort buttons

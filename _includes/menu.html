@@ -14,7 +14,7 @@
     <li><a href="/#hello"                   class="waves-effect"><i class="material-icons"> home </i> home </a></li>
     {% for collection in site.collections %}
       <li>
-        <a href="/#{{ collection.label}}" class="waves-effect">
+        <a class="closeSidenavs" href="/#{{ collection.label}}" class="waves-effect">
           <img src="{{ collection.icon }}" alt="{{ collection.iconAlt }}" class="invert-on-dark">
           {{ collection.name }}
         </a>
@@ -22,8 +22,8 @@
     {% endfor %}
     <!-- contact -->
     <h4>Contact</h4>
-    <li><a target="_blank" href="mailto: r2hk9ahnf@relay.firefox.com" class="waves-effect"><i class="material-icons"> email  </i> email  </a></li>
+    <li><a class="closeSidenavs" target="_blank" href="mailto: r2hk9ahnf@relay.firefox.com" class="waves-effect"><i class="material-icons"> email  </i> email  </a></li>
     <!-- acounts -->
     <h4>Acounts</h4>
-    <li><a target="_blank" href="https://github.com/godalming123"     class="waves-effect"><i class="material-icons"> github </i> github </a></li>
+    <li><a class="closeSidenavs" target="_blank" href="https://github.com/godalming123"     class="waves-effect"><i class="material-icons"> github </i> github </a></li>
   </ul>
