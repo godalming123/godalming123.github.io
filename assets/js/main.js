@@ -1,3 +1,11 @@
+// width function
+function getWidth(){
+  return window.innerWidth
+}
+
+function BiggerThen991() {
+  return getWidth() >= 992
+}
 
 //register service worker
 
@@ -13,8 +21,10 @@ if ('serviceWorker' in navigator) {
 var SidebarInstances = M.Sidenav.init(document.querySelectorAll('.sidenav'), {"edge": "right"});
 document.querySelectorAll(".closeSidenavs").forEach((elem) => {
   elem.onclick = () => {
-    for ( let _ = 0; _ <= SidebarInstances.length ; _++ ) {
-      SidebarInstances[_].close();
+    if (!BiggerThen991()) {
+      for ( let _ = 0; _ <= SidebarInstances.length ; _++ ) {
+        SidebarInstances[_].close();
+      }
     }
   }
 })
