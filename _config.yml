@@ -25,7 +25,7 @@ collections:
     name: My Blogs
     description: The latest happening's
     icon: /icons/blogger.svg
-    iconAlt: a capitla B
+    iconAlt: a capital B
 
 plugins:
   - jekyll-seo-tag
